@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Segoe Ui Ligth;
+    src: url("../fonts/segoe_ui_light.ttf");
+}
+@font-face {
+    font-family: Lavanderia Regular;
+    src: url("../fonts/lavanderia-regular.otf");
+}
+@font-face {
+    font-family: Blindspot;
+    src: url("../fonts/blindspot.otf");
+}
+.textField{
+    -fx-background-color: transparent;
+    -fx-animated: true;
+    -fx-border-color: #4db242;
+    -fx-border-radius: 5; 
+    -fx-font-size: 14;
+}
+.btnLogin{
+    -fx-background-color: transparent;
+    -fx-border-color: #4db242;
+    -fx-text-fill: #4db242;
+    -fx-border-radius: 5;
+}
+
+.btnLogin:hover{
+    -fx-background-color:  #4db242;
+    -fx-border-color: white;
+    -fx-text-fill: whitesmoke;
+}
+
+.btnLogin:pressed{
+    -fx-background-color:  transparent;
+    -fx-border-color: #4db242;
+    -fx-text-fill:  #4db242;
+}
+.texto {
+    -fx-underline: false;
+    -fx-border-radius: 20;
+    -fx-text-fill: #4db242;
+}
+
+.texto:hover {
+    -fx-underline: true;
+}
+.texto:pressed {
+    -fx-background-color:#4db242;
+    -fx-text-fill:  white;
+}
+.btnCadastro{
+    -fx-background-color:#4db242;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+}
+
+.btnCadastro:hover{
+    -fx-background-color:  transparent;
+    -fx-border-color: #4db242;
+    -fx-text-fill: #4db242;
+}
+
+.btnCadastro:pressed{
+    -fx-background-color:  #4db242;
+    -fx-border-color: white;
+    -fx-text-fill:  white;
+}
+
+.btnVoltar:hover{
+    -fx-underline: true;
+}
+.cardPane:hover{
+    -fx-background-color: #D3D3D3;
+}
+.cardPane:pressed{
+    -fx-background-color: white;
+}
+#cardPaneMeio{
+    -fx-background-color:  whitesmoke;
+}
+#cardPaneMeio:hover{
+    -fx-background-color: #D3D3D3;
+}
+#cardPaneMeio:pressed{
+    -fx-background-color:  whitesmoke;
+}
+.editar{
+    -fx-text-fill: #4db242;
+}
+.editar:hover{
+    -fx-underline: true;
+}
+.editar:pressed{
+    -fx-background-color: #4db242;
+    -fx-text-fill: white;
+}
+
+#btnEliminar{
+    -fx-background-color: white;
+    -fx-border-color: #ff3b3b;
+    -fx-text-fill: #ff3b3b;
+    -fx-border-radius: 5;
+
+}
+#btnEliminar:hover{
+    -fx-background-color:#ff3b3b;
+    -fx-border-color: white;
+    -fx-text-fill: whitesmoke;
+
+}
+#btnEliminar:pressed{
+    -fx-background-color:  white;
+    -fx-border-color:#ff3b3b;
+    -fx-text-fill: #ff3b3b;
+}
+#Welcome{
+    -fx-font-family: "Lavanderia Regular";
+    -fx-font-size: 40;
+}
+.painelPrincipal{
+    -fx-background-image: url(../Imagens/imagemFundo.png);
+    
+}

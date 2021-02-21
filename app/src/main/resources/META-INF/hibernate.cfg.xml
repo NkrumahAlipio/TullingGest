@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/tullinggest?serverTimezone=Africa/Luanda</property>
+        <property name="connection.username">root</property>
+        <property name="show_sql">update</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="format_sql">true</property>
+        
+        <mapping class="TullingGest.classes.entity.Pessoa" />
+        <mapping class="TullingGest.classes.entity.Animal" />
+        <mapping class="TullingGest.classes.entity.Familia" />
+        <mapping class="TullingGest.classes.entity.Gasto" />
+        <mapping class="TullingGest.classes.entity.Endereco" />
+        <mapping class="TullingGest.classes.entity.Dizimo" />
+        <mapping class="TullingGest.classes.entity.Credito" />
+        <mapping class="TullingGest.classes.entity.PrevisaoMensal"/> 
+        <mapping class="TullingGest.classes.entity.Rendimento"/> 
+        <mapping class="TullingGest.classes.entity.Admin"/> 
+        <mapping class="TullingGest.classes.entity.Poupanca"/> 
+
+        
+    </session-factory>
+</hibernate-configuration>

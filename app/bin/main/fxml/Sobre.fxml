@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="painelPrincipal" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TullingGest.controllers.SobreController">
+   <children>
+      <HBox alignment="CENTER" layoutX="273.0" layoutY="25.0" stylesheets="@../css/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="Sobre O ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label style="-fx-text-fill: #4db242;" text="3MD">
+               <font>
+                  <Font name="Magneto Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label text="Tulling">
+               <font>
+                  <Font name="Magneto Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label prefHeight="29.0" prefWidth="58.0" text="Gest">
+               <font>
+                  <Font name="Magneto Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/IconeFamilia_64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Text boundsType="VISUAL" layoutX="45.0" layoutY="200.0" lineSpacing="2.0" strokeWidth="0.0" text="A Inteligência financeira pessoal e da família, é um dos temas muito abordados no dia-a-dia nas nossas comunidades e portanto, desenvolver um software nesta linha é extremamente necessário no actual contexto do país. Um software com esta abordagem visa de que maneira auxiliar as famílias angolanas na gestão das suas finanças." textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="513.43505859375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

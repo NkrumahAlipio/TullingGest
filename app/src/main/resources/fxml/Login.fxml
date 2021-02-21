@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="painelLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;" styleClass="painelPrincipal" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TullingGest.controllers.LoginController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" stylesheets="@../css/style.css">
+                     <children>
+                        <Label style="-fx-text-fill: #4db242;" text="3MD">
+                           <font>
+                              <Font name="Magneto Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tulling">
+                           <font>
+                              <Font name="Magneto Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="29.0" prefWidth="58.0" text="Gest">
+                           <font>
+                              <Font name="Magneto Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Imagens/IconeFamilia_64.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Label text="Acesse A Conta Da Sua Família">
+                     <font>
+                        <Font name="Magneto Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="ipEmail" promptText="Seu Email" styleClass="textField" stylesheets="@../css/style.css">
+                     <VBox.margin>
+                        <Insets left="130.0" right="130.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <StackPane fx:id="spSenha" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="376.0">
+                     <children>
+                        <TextField fx:id="ipSenha" disable="true" promptText="Senha Da Familia" styleClass="textField" stylesheets="@../css/style.css" visible="false" />
+                        <PasswordField fx:id="pfSenha" promptText="Senha " styleClass="textField" stylesheets="@../css/style.css" />
+                        <ImageView fx:id="ivVerSenha" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Imagens/iconeOlhoFechado_32.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <StackPane.margin>
+                              <Insets right="5.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="130.0" right="130.0" />
+                     </VBox.margin>
+                  </StackPane>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginHandler" prefWidth="232.0" styleClass="btnLogin" stylesheets="@../css/style.css" text="Fazer Login">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lblRecSenha" styleClass="texto" stylesheets="@../css/style.css" text="Esqueci A Minha Senha!" textFill="#298d1d">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="lblNotificacoes" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="500.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Label text="Criado Por Nkrumah Alípio" textFill="GREY" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
